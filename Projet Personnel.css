@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    background-color: #003C57;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
+    padding: 20px; 
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%, rgb(0, 60, 87) 100%);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; 
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    color: #04bbff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.body {
+    margin: 7%;
+    padding: 0;
+}
+
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 90%; 
+    max-width: 500px;
+}
+
+/* Footer */
+.foot {
+    display: flex;
+    flex-direction: column;
+    min-height: 3vh;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%, rgb(0, 60, 87) 100%);
+    text-align: center;
+    color: #fff;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-info p, .contact-info a {
+    color: #fff;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px;
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; 
+    }
+
+    ul {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    li {
+        margin: 10px 0; 
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .body {
+        margin: 5%;
+    }
+
+    .foot {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: ​⬤
